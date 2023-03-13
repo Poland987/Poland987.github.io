@@ -22,11 +22,10 @@ const santa = add([
     pos(100,100)
 ])
 
+onKeyRelease("space", ()=>play("muzyka"))
 
 let prawo = true
-add([
-    play("muzyka")
-])
+
 onUpdate(()=>{
     
     if(prawo && santa.pos.x<500) 
